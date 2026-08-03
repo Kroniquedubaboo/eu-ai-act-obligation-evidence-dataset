@@ -1,0 +1,5 @@
+# Internal tooling / operational artifacts — never publish
+.claude-flow/
+.DS_Store
+*.pyc
+__pycache__/
