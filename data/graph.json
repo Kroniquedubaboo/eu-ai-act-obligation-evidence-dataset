@@ -1,0 +1,1071 @@
+{
+ "generator": "EU AI Regulation Decoded",
+ "domain": "https://euaird.vercel.app",
+ "license": "CC BY 4.0 (attribution: EU AI Regulation Decoded)",
+ "note": "Practitioner reference, not legal advice.",
+ "obligations": [
+  {
+   "id": "obl-art15-declare-accuracy-metrics",
+   "short_title": "Declare accuracy metrics in instructions for use",
+   "statement": "Choose appropriate accuracy metrics for the high-risk system and declare the levels and the metrics in the accompanying instructions for use; substantiate them in the technical documentation.",
+   "derived_from_ids": [
+    "art-15",
+    "art-11"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-accuracy-declaration-record",
+    "ev-instructions-for-use",
+    "ev-technical-file-annexiv"
+   ],
+   "red_flag_ids": [
+    "rf-no-accuracy-metric-declared",
+    "rf-retroactive-documentation"
+   ],
+   "mistake_ids": [
+    "mis-single-accuracy-number"
+   ],
+   "issue_ids": [
+    "iss-7"
+   ],
+   "source_ids": [
+    "src-art15"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": false,
+   "confidence": "high"
+  },
+  {
+   "id": "obl-art15-robustness",
+   "short_title": "Evidence robustness / resilience",
+   "statement": "Design the system to be as resilient as possible to errors, faults and inconsistencies, and to attempts at manipulation (adversarial examples, data/model poisoning); maintain a defensible robustness test plan and results.",
+   "derived_from_ids": [
+    "art-15"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-robustness-test-plan",
+    "ev-technical-file-annexiv"
+   ],
+   "red_flag_ids": [
+    "rf-retroactive-documentation",
+    "rf-unversioned-docs"
+   ],
+   "mistake_ids": [],
+   "issue_ids": [
+    "iss-7"
+   ],
+   "source_ids": [
+    "src-art15"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": false,
+   "confidence": "high"
+  },
+  {
+   "id": "obl-art15-cybersecurity",
+   "short_title": "Evidence AI-specific cybersecurity",
+   "statement": "Protect the system against AI-specific attacks (data poisoning, model poisoning, adversarial examples, confidentiality attacks) throughout its lifecycle; produce dated cybersecurity evidence including an AI threat model.",
+   "derived_from_ids": [
+    "art-15"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-cybersecurity-threat-model",
+    "ev-technical-file-annexiv"
+   ],
+   "red_flag_ids": [
+    "rf-retroactive-documentation"
+   ],
+   "mistake_ids": [],
+   "issue_ids": [
+    "iss-7"
+   ],
+   "source_ids": [
+    "src-art15"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": false,
+   "confidence": "high"
+  },
+  {
+   "id": "obl-art9-risk-management",
+   "short_title": "Run a lifecycle risk-management system",
+   "statement": "Establish, implement, document and maintain a continuous risk-management system: identify and evaluate known and reasonably foreseeable risks, adopt targeted mitigation, and test throughout the lifecycle.",
+   "derived_from_ids": [
+    "art-9"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-risk-management-file",
+    "ev-technical-file-annexiv"
+   ],
+   "red_flag_ids": [
+    "rf-retroactive-documentation",
+    "rf-unversioned-docs"
+   ],
+   "mistake_ids": [],
+   "issue_ids": [],
+   "source_ids": [
+    "src-art9"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "obl-art10-data-governance",
+   "short_title": "Govern training, validation and test data",
+   "statement": "Ensure training/validation/testing datasets meet quality criteria (relevance, representativeness, appropriate statistical properties for the intended purpose) and are examined for possible biases; document data provenance and processing.",
+   "derived_from_ids": [
+    "art-10"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-data-governance-records",
+    "ev-technical-file-annexiv"
+   ],
+   "red_flag_ids": [
+    "rf-retroactive-documentation"
+   ],
+   "mistake_ids": [],
+   "issue_ids": [],
+   "source_ids": [
+    "src-art10"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "obl-art26-deployer-human-oversight",
+   "short_title": "Assign human oversight and use per instructions (deployer)",
+   "statement": "As a deployer of a high-risk system: use it in accordance with the instructions for use, assign human oversight to competent, trained and resourced natural persons, ensure input data is relevant and sufficiently representative, monitor operation, and keep the automatically-generated logs.",
+   "derived_from_ids": [
+    "art-26"
+   ],
+   "applies_to_role_ids": [
+    "role-deployer"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-deployer-oversight-record",
+    "ev-system-logs"
+   ],
+   "red_flag_ids": [
+    "rf-no-log-retention"
+   ],
+   "mistake_ids": [],
+   "issue_ids": [],
+   "source_ids": [
+    "src-art26"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "obl-art11-technical-documentation",
+   "short_title": "Draw up & maintain the Annex IV technical file",
+   "statement": "Draw up the Annex IV technical documentation before market placement and keep it up to date as a living document; it is the primary evidence package assessed at conformity assessment.",
+   "derived_from_ids": [
+    "art-11",
+    "anx-4"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-technical-file-annexiv",
+    "ev-compliance-matrix"
+   ],
+   "red_flag_ids": [
+    "rf-retroactive-documentation",
+    "rf-unversioned-docs",
+    "rf-no-requirement-to-evidence-map"
+   ],
+   "mistake_ids": [
+    "mis-docs-after-the-fact"
+   ],
+   "issue_ids": [
+    "iss-5"
+   ],
+   "source_ids": [
+    "src-art11",
+    "src-annex4"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": false,
+   "confidence": "high"
+  },
+  {
+   "id": "obl-art6-classify-high-risk",
+   "short_title": "Classify the system against Article 6 / Annex III",
+   "statement": "Determine whether the system is high-risk: does it fall in an Annex III domain AND perform a listed function (6(2)), or is it an Annex I product/safety-component (6(1))? Apply the 6(3) not-significant-risk exception only with a documented justification.",
+   "derived_from_ids": [
+    "art-6",
+    "anx-3"
+   ],
+   "applies_to_role_ids": [
+    "role-provider",
+    "role-deployer"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-classification-decision-record"
+   ],
+   "red_flag_ids": [
+    "rf-unjustified-6-3-exception"
+   ],
+   "mistake_ids": [
+    "mis-domain-equals-highrisk"
+   ],
+   "issue_ids": [
+    "iss-6",
+    "post-annex3"
+   ],
+   "source_ids": [
+    "src-art6",
+    "src-annex3",
+    "src-guidance-hrai-2026-05"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "obl-art49-database-registration",
+   "short_title": "Register in the EU database",
+   "statement": "Register the high-risk system (and required provider/system information) in the EU database before placing it on the market or putting it into service.",
+   "derived_from_ids": [
+    "art-49"
+   ],
+   "applies_to_role_ids": [
+    "role-provider",
+    "role-deployer"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-eu-db-registration"
+   ],
+   "red_flag_ids": [],
+   "mistake_ids": [],
+   "issue_ids": [
+    "iss-3"
+   ],
+   "source_ids": [
+    "src-art49"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "obl-art43-conformity-assessment",
+   "short_title": "Complete conformity assessment before market",
+   "statement": "Pass the applicable conformity-assessment procedure (internal control or notified body) demonstrating the requirements are met, before placing the high-risk system on the market.",
+   "derived_from_ids": [
+    "art-43"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-high-annex3",
+    "risk-high-annex1"
+   ],
+   "deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "evidence_ids": [
+    "ev-doc-conformity",
+    "ev-technical-file-annexiv"
+   ],
+   "red_flag_ids": [],
+   "mistake_ids": [],
+   "issue_ids": [
+    "iss-5"
+   ],
+   "source_ids": [
+    "src-art43"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": true,
+   "confidence": "medium"
+  },
+  {
+   "id": "obl-art50-ai-interaction-disclosure",
+   "short_title": "Disclose AI interaction to users",
+   "statement": "Design AI systems intended to interact directly with people so those people are informed they are interacting with an AI, unless obvious to a reasonably well-informed person.",
+   "derived_from_ids": [
+    "art-50"
+   ],
+   "applies_to_role_ids": [
+    "role-provider"
+   ],
+   "risk_category_ids": [
+    "risk-transparency"
+   ],
+   "deadline_id": "dl-2026-08-02-transparency",
+   "evidence_ids": [
+    "ev-transparency-notice"
+   ],
+   "red_flag_ids": [],
+   "mistake_ids": [
+    "mis-transparency-only-high-risk"
+   ],
+   "issue_ids": [
+    "iss-4"
+   ],
+   "source_ids": [
+    "src-art50"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": false,
+   "confidence": "high"
+  },
+  {
+   "id": "obl-art50-synthetic-content-marking",
+   "short_title": "Mark AI-generated content machine-readably",
+   "statement": "Providers generating synthetic audio/image/video/text must mark outputs in a machine-readable format detectable as artificially generated or manipulated (with limited exceptions).",
+   "derived_from_ids": [
+    "art-50"
+   ],
+   "applies_to_role_ids": [
+    "role-provider",
+    "role-gpai-provider"
+   ],
+   "risk_category_ids": [
+    "risk-transparency"
+   ],
+   "deadline_id": "dl-2026-08-02-transparency",
+   "evidence_ids": [
+    "ev-content-provenance-marking"
+   ],
+   "red_flag_ids": [],
+   "mistake_ids": [],
+   "issue_ids": [
+    "iss-4"
+   ],
+   "source_ids": [
+    "src-art50"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": false,
+   "confidence": "high"
+  },
+  {
+   "id": "obl-art50-deepfake-disclosure",
+   "short_title": "Disclose deepfakes",
+   "statement": "Deployers generating or manipulating deepfake image/audio/video must disclose that the content is artificially generated or manipulated.",
+   "derived_from_ids": [
+    "art-50"
+   ],
+   "applies_to_role_ids": [
+    "role-deployer"
+   ],
+   "risk_category_ids": [
+    "risk-transparency"
+   ],
+   "deadline_id": "dl-2026-08-02-transparency",
+   "evidence_ids": [
+    "ev-transparency-notice"
+   ],
+   "red_flag_ids": [],
+   "mistake_ids": [],
+   "issue_ids": [
+    "iss-4"
+   ],
+   "source_ids": [
+    "src-art50"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": false,
+   "confidence": "high"
+  },
+  {
+   "id": "obl-art53-gpai-documentation",
+   "short_title": "GPAI provider documentation & copyright",
+   "statement": "Providers of GPAI models must maintain up-to-date technical documentation, provide information to downstream providers, put a copyright-compliance policy in place, and publish a sufficiently detailed summary of training content.",
+   "derived_from_ids": [
+    "art-53"
+   ],
+   "applies_to_role_ids": [
+    "role-gpai-provider"
+   ],
+   "risk_category_ids": [
+    "risk-gpai",
+    "risk-gpai-systemic"
+   ],
+   "deadline_id": "dl-2025-08-02-gpai",
+   "evidence_ids": [
+    "ev-gpai-model-documentation",
+    "ev-training-content-summary"
+   ],
+   "red_flag_ids": [],
+   "mistake_ids": [],
+   "issue_ids": [
+    "iss-1"
+   ],
+   "source_ids": [
+    "src-art53",
+    "src-gpai-cop-2025-07"
+   ],
+   "version": 1,
+   "last_reviewed": "2026-07-30",
+   "status": "active",
+   "needs_review": true,
+   "confidence": "medium"
+  }
+ ],
+ "evidence_artifacts": [
+  {
+   "id": "ev-accuracy-declaration-record",
+   "name": "Accuracy Declaration Record",
+   "description": "Dated record stating the chosen accuracy metric(s), target levels, the test set/conditions, and where they are declared in the instructions for use. Substantiated in the technical file.",
+   "satisfies_obligation_ids": [
+    "obl-art15-declare-accuracy-metrics"
+   ],
+   "annex_iv_section": "anx-4-2",
+   "contemporaneous": true,
+   "format": "record",
+   "source_ids": [
+    "src-art15"
+   ]
+  },
+  {
+   "id": "ev-robustness-test-plan",
+   "name": "Robustness test plan & results",
+   "description": "A defensible plan and dated results showing resilience to errors, edge cases and adversarial manipulation.",
+   "satisfies_obligation_ids": [
+    "obl-art15-robustness"
+   ],
+   "annex_iv_section": "anx-4-3",
+   "contemporaneous": true,
+   "format": "plan+results",
+   "source_ids": [
+    "src-art15"
+   ]
+  },
+  {
+   "id": "ev-cybersecurity-threat-model",
+   "name": "AI cybersecurity threat model & evidence",
+   "description": "Dated AI-specific threat model (data poisoning, model poisoning, adversarial examples, confidentiality attacks) with mitigations and validation.",
+   "satisfies_obligation_ids": [
+    "obl-art15-cybersecurity"
+   ],
+   "annex_iv_section": "anx-4-3",
+   "contemporaneous": true,
+   "format": "threat-model",
+   "source_ids": [
+    "src-art15"
+   ]
+  },
+  {
+   "id": "ev-technical-file-annexiv",
+   "name": "Annex IV technical file",
+   "description": "The full technical documentation package; primary evidence at conformity assessment; must be a living, versioned document.",
+   "satisfies_obligation_ids": [
+    "obl-art11-technical-documentation",
+    "obl-art15-declare-accuracy-metrics",
+    "obl-art43-conformity-assessment"
+   ],
+   "annex_iv_section": "anx-4",
+   "contemporaneous": true,
+   "format": "dossier",
+   "source_ids": [
+    "src-art11",
+    "src-annex4"
+   ]
+  },
+  {
+   "id": "ev-compliance-matrix",
+   "name": "Requirement-to-evidence compliance matrix",
+   "description": "A matrix mapping each Annex IV requirement to the specific document/section/evidence that satisfies it. Explicitly what auditors ask for.",
+   "satisfies_obligation_ids": [
+    "obl-art11-technical-documentation"
+   ],
+   "annex_iv_section": "anx-4",
+   "contemporaneous": true,
+   "format": "matrix",
+   "source_ids": [
+    "src-annex4"
+   ]
+  },
+  {
+   "id": "ev-instructions-for-use",
+   "name": "Instructions for use",
+   "description": "Accompanying instructions where declared accuracy levels/metrics and other required information appear.",
+   "satisfies_obligation_ids": [
+    "obl-art15-declare-accuracy-metrics"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": false,
+   "format": "document",
+   "source_ids": [
+    "src-art15"
+   ]
+  },
+  {
+   "id": "ev-classification-decision-record",
+   "name": "High-risk classification decision record",
+   "description": "Documented Article 6 determination: Annex III domain + function match (or 6(1) product route), and any 6(3) exception justification.",
+   "satisfies_obligation_ids": [
+    "obl-art6-classify-high-risk"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": true,
+   "format": "record",
+   "source_ids": [
+    "src-art6",
+    "src-guidance-hrai-2026-05"
+   ]
+  },
+  {
+   "id": "ev-eu-db-registration",
+   "name": "EU database registration confirmation",
+   "description": "Proof of registration of the high-risk system in the EU database prior to placement/service.",
+   "satisfies_obligation_ids": [
+    "obl-art49-database-registration"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": false,
+   "format": "confirmation",
+   "source_ids": [
+    "src-art49"
+   ]
+  },
+  {
+   "id": "ev-doc-conformity",
+   "name": "EU Declaration of Conformity",
+   "description": "Signed declaration that the high-risk system meets AIA requirements (Annex IV(7)).",
+   "satisfies_obligation_ids": [
+    "obl-art43-conformity-assessment"
+   ],
+   "annex_iv_section": "anx-4-7",
+   "contemporaneous": false,
+   "format": "declaration",
+   "source_ids": [
+    "src-art43"
+   ]
+  },
+  {
+   "id": "ev-transparency-notice",
+   "name": "Transparency / disclosure notice",
+   "description": "The user-facing notice or in-product disclosure evidencing Article 50 duties (AI interaction / deepfake disclosure).",
+   "satisfies_obligation_ids": [
+    "obl-art50-ai-interaction-disclosure",
+    "obl-art50-deepfake-disclosure"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": false,
+   "format": "notice",
+   "source_ids": [
+    "src-art50"
+   ]
+  },
+  {
+   "id": "ev-content-provenance-marking",
+   "name": "Machine-readable content marking",
+   "description": "Technical marking (e.g. watermark/metadata/provenance) making AI-generated content detectable as artificial.",
+   "satisfies_obligation_ids": [
+    "obl-art50-synthetic-content-marking"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": false,
+   "format": "technical-marking",
+   "source_ids": [
+    "src-art50"
+   ]
+  },
+  {
+   "id": "ev-risk-management-file",
+   "name": "Risk-management file",
+   "description": "Living record of the Article 9 risk-management system: identified risks, evaluation, mitigation measures adopted, and test results across the lifecycle.",
+   "satisfies_obligation_ids": [
+    "obl-art9-risk-management"
+   ],
+   "annex_iv_section": "anx-4-4",
+   "contemporaneous": true,
+   "format": "file",
+   "source_ids": [
+    "src-art9"
+   ]
+  },
+  {
+   "id": "ev-data-governance-records",
+   "name": "Data-governance records",
+   "description": "Dataset cards, provenance documentation, representativeness rationale and bias-examination reports substantiating Article 10 for training/validation/test data.",
+   "satisfies_obligation_ids": [
+    "obl-art10-data-governance"
+   ],
+   "annex_iv_section": "anx-4-2",
+   "contemporaneous": true,
+   "format": "records",
+   "source_ids": [
+    "src-art10"
+   ]
+  },
+  {
+   "id": "ev-deployer-oversight-record",
+   "name": "Deployer human-oversight record",
+   "description": "Evidence the deployer assigned competent, trained human oversight, used the system per instructions, and checked input-data relevance.",
+   "satisfies_obligation_ids": [
+    "obl-art26-deployer-human-oversight"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": true,
+   "format": "record",
+   "source_ids": [
+    "src-art26"
+   ]
+  },
+  {
+   "id": "ev-system-logs",
+   "name": "Automatically-generated logs",
+   "description": "Retained operational logs the deployer must keep for high-risk systems within its control.",
+   "satisfies_obligation_ids": [
+    "obl-art26-deployer-human-oversight"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": true,
+   "format": "logs",
+   "source_ids": [
+    "src-art26"
+   ]
+  },
+  {
+   "id": "ev-gpai-model-documentation",
+   "name": "GPAI model documentation",
+   "description": "Up-to-date model documentation for authorities and downstream providers.",
+   "satisfies_obligation_ids": [
+    "obl-art53-gpai-documentation"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": true,
+   "format": "dossier",
+   "source_ids": [
+    "src-art53"
+   ]
+  },
+  {
+   "id": "ev-training-content-summary",
+   "name": "Training-content summary",
+   "description": "Sufficiently detailed public summary of content used to train the GPAI model.",
+   "satisfies_obligation_ids": [
+    "obl-art53-gpai-documentation"
+   ],
+   "annex_iv_section": null,
+   "contemporaneous": false,
+   "format": "summary",
+   "source_ids": [
+    "src-art53",
+    "src-gpai-cop-2025-07"
+   ]
+  }
+ ],
+ "articles": [
+  {
+   "id": "art-5",
+   "number": 5,
+   "legal_title": "Prohibited AI practices",
+   "plain_title": "What AI you may not build or use at all",
+   "summary": "Bans a defined set of practices (e.g. harmful manipulation, social scoring, certain biometric categorisation and untargeted scraping).",
+   "applies_from_deadline_id": "dl-2025-02-02-prohibited",
+   "source_ids": [
+    "src-art5"
+   ]
+  },
+  {
+   "id": "art-6",
+   "number": 6,
+   "legal_title": "Classification rules for high-risk AI systems",
+   "plain_title": "How to tell if your system is high-risk",
+   "summary": "Two routes to high-risk: Annex I regulated products (6(1)) and Annex III use cases (6(2)); 6(3) gives a limited exception where the system does not pose significant risk.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art6",
+    "src-guidance-hrai-2026-05"
+   ]
+  },
+  {
+   "id": "art-9",
+   "number": 9,
+   "legal_title": "Risk management system",
+   "plain_title": "The risk-management system you must run for the whole lifecycle",
+   "summary": "Requires a continuous, documented risk-management system for high-risk AI: identify and evaluate known and foreseeable risks, adopt mitigation measures, and test throughout the lifecycle.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art9"
+   ]
+  },
+  {
+   "id": "art-10",
+   "number": 10,
+   "legal_title": "Data and data governance",
+   "plain_title": "Proving your training data is governed",
+   "summary": "Training, validation and testing data must meet quality criteria and be governed: relevance, representativeness, appropriate statistical properties, and examination for bias.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art10"
+   ]
+  },
+  {
+   "id": "art-11",
+   "number": 11,
+   "legal_title": "Technical documentation",
+   "plain_title": "The technical file you must keep current",
+   "summary": "Requires the Annex IV technical documentation to be drawn up before market placement and kept up to date.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art11",
+    "src-annex4"
+   ]
+  },
+  {
+   "id": "art-26",
+   "number": 26,
+   "legal_title": "Obligations of deployers of high-risk AI systems",
+   "plain_title": "What you must do when you deploy someone else's high-risk AI",
+   "summary": "Deployers must use the system per its instructions, assign competent human oversight, ensure input data is relevant, monitor operation and keep automatically-generated logs, and inform affected workers and persons where required.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art26"
+   ]
+  },
+  {
+   "id": "art-15",
+   "number": 15,
+   "legal_title": "Accuracy, robustness and cybersecurity",
+   "plain_title": "Proving your system is accurate, robust and secure",
+   "summary": "High-risk systems must reach and sustain appropriate accuracy, robustness and cybersecurity; declared accuracy metrics go in the instructions for use; resilience against errors and adversarial manipulation (data/model poisoning, adversarial examples) is required.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art15"
+   ]
+  },
+  {
+   "id": "art-43",
+   "number": 43,
+   "legal_title": "Conformity assessment",
+   "plain_title": "The assessment you pass before going to market",
+   "summary": "Sets the conformity-assessment route (internal control vs notified body) a high-risk system must complete before placement.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art43"
+   ]
+  },
+  {
+   "id": "art-49",
+   "number": 49,
+   "legal_title": "Registration",
+   "plain_title": "Registering your system in the EU database",
+   "summary": "Providers (and some deployers) of high-risk systems must register in the EU database before placing on market / putting into service.",
+   "applies_from_deadline_id": "dl-2027-12-02-highrisk-annex3",
+   "source_ids": [
+    "src-art49"
+   ]
+  },
+  {
+   "id": "art-50",
+   "number": 50,
+   "legal_title": "Transparency obligations for providers and deployers of certain AI systems",
+   "plain_title": "Telling people when they're dealing with AI",
+   "summary": "Disclosure duties independent of high-risk status: inform users they interact with AI; mark AI-generated/manipulated content in machine-readable form; disclose deepfakes; notify subjects of emotion-recognition/biometric-categorisation.",
+   "applies_from_deadline_id": "dl-2026-08-02-transparency",
+   "source_ids": [
+    "src-art50"
+   ]
+  },
+  {
+   "id": "art-53",
+   "number": 53,
+   "legal_title": "Obligations for providers of general-purpose AI models",
+   "plain_title": "What GPAI model providers must document and share",
+   "summary": "Technical documentation, downstream-provider information, copyright policy and training-content summary; heavier duties for systemic-risk models.",
+   "applies_from_deadline_id": "dl-2025-08-02-gpai",
+   "source_ids": [
+    "src-art53",
+    "src-gpai-cop-2025-07"
+   ]
+  }
+ ],
+ "annexes": [
+  {
+   "id": "anx-3",
+   "number": "III",
+   "title": "High-risk AI systems referred to in Article 6(2)",
+   "summary": "Eight use-case domains: (1) biometrics; (2) critical infrastructure; (3) education & vocational training; (4) employment & worker management; (5) access to essential private & public services; (6) law enforcement; (7) migration, asylum & border control; (8) administration of justice & democratic processes. Matching a domain is necessary but not sufficient \u2014 the system must also perform a function the domain's text lists.",
+   "sections": [],
+   "source_ids": [
+    "src-annex3",
+    "src-guidance-hrai-2026-05"
+   ]
+  },
+  {
+   "id": "anx-4",
+   "number": "IV",
+   "title": "Technical documentation",
+   "summary": "The structured content of the technical file. Commonly summarised as ~8-9 blocks: (1) general system description; (2) detailed description incl. development process; (3) monitoring/functioning/control; (4) risk-management; (5) lifecycle changes; (6) standards applied; (7) EU declaration of conformity; (8) post-market monitoring plan; plus data-governance substantiation (Art. 10 records).",
+   "sections": [
+    {
+     "ref": "anx-4-1",
+     "name": "General description of the AI system"
+    },
+    {
+     "ref": "anx-4-2",
+     "name": "Detailed description incl. development process & data"
+    },
+    {
+     "ref": "anx-4-3",
+     "name": "Monitoring, functioning and control"
+    },
+    {
+     "ref": "anx-4-4",
+     "name": "Risk-management system"
+    },
+    {
+     "ref": "anx-4-5",
+     "name": "Lifecycle changes"
+    },
+    {
+     "ref": "anx-4-6",
+     "name": "Harmonised standards applied"
+    },
+    {
+     "ref": "anx-4-7",
+     "name": "EU declaration of conformity"
+    },
+    {
+     "ref": "anx-4-8",
+     "name": "Post-market monitoring plan"
+    }
+   ],
+   "source_ids": [
+    "src-annex4"
+   ],
+   "needs_review": true
+  }
+ ],
+ "deadlines": [
+  {
+   "id": "dl-2025-02-02-prohibited",
+   "date": "2025-02-02",
+   "label": "Prohibited practices (Art. 5) apply",
+   "applies_to": [
+    "risk-prohibited"
+   ],
+   "status": "in_force",
+   "history": [],
+   "source_ids": [
+    "src-art5",
+    "src-ec-timeline"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "dl-2025-08-02-gpai",
+   "date": "2025-08-02",
+   "label": "GPAI model obligations apply",
+   "applies_to": [
+    "risk-gpai",
+    "risk-gpai-systemic"
+   ],
+   "status": "in_force",
+   "history": [],
+   "source_ids": [
+    "src-art53",
+    "src-ec-timeline"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "dl-2026-08-02-transparency",
+   "date": "2026-08-02",
+   "label": "Article 50 transparency obligations apply; enforcement powers arrive",
+   "applies_to": [
+    "risk-transparency"
+   ],
+   "status": "upcoming",
+   "history": [],
+   "source_ids": [
+    "src-art50",
+    "src-ec-timeline"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "dl-2027-12-02-highrisk-annex3",
+   "date": "2027-12-02",
+   "label": "Stand-alone high-risk (Annex III) obligations apply",
+   "applies_to": [
+    "risk-high-annex3"
+   ],
+   "status": "upcoming",
+   "history": [
+    {
+     "date": "2026-08-02",
+     "changed_on": "2026-05-07",
+     "reason": "Deferred ~16 months by the 7 May 2026 political agreement (Digital Omnibus timeline relief).",
+     "source_ids": [
+      "src-omnibus-2026-05-07"
+     ]
+    }
+   ],
+   "source_ids": [
+    "src-omnibus-2026-05-07"
+   ],
+   "confidence": "medium",
+   "needs_review": true
+  },
+  {
+   "id": "dl-2028-08-02-highrisk-annex1",
+   "date": "2028-08-02",
+   "label": "High-risk regulated-product (Annex I) obligations apply",
+   "applies_to": [
+    "risk-high-annex1"
+   ],
+   "status": "upcoming",
+   "history": [
+    {
+     "date": "2027-08-02",
+     "changed_on": "2026-05-07",
+     "reason": "Deferred ~12 months by the 7 May 2026 political agreement.",
+     "source_ids": [
+      "src-omnibus-2026-05-07"
+     ]
+    }
+   ],
+   "source_ids": [
+    "src-omnibus-2026-05-07"
+   ],
+   "confidence": "medium",
+   "needs_review": true
+  }
+ ],
+ "roles": [
+  {
+   "id": "role-provider",
+   "name": "Provider",
+   "definition": "Develops an AI system / GPAI model (or has one developed) and places it on the market or puts it into service under its own name or trademark. Carries the heaviest obligation load.",
+   "source_ids": [
+    "src-reg-2024-1689"
+   ]
+  },
+  {
+   "id": "role-deployer",
+   "name": "Deployer",
+   "definition": "Uses an AI system under its authority in a professional context (not a personal, non-professional user). Distinct, lighter-but-real duties (human oversight, use per instructions, some logging).",
+   "source_ids": [
+    "src-reg-2024-1689"
+   ]
+  },
+  {
+   "id": "role-gpai-provider",
+   "name": "GPAI model provider",
+   "definition": "Provides a general-purpose AI model. Specific documentation, copyright and transparency duties; heavier duties if the model has systemic risk.",
+   "source_ids": [
+    "src-art53",
+    "src-gpai-cop-2025-07"
+   ]
+  },
+  {
+   "id": "role-importer",
+   "name": "Importer",
+   "definition": "Places on the EU market an AI system bearing the name/trademark of a person established outside the EU.",
+   "source_ids": [
+    "src-reg-2024-1689"
+   ]
+  },
+  {
+   "id": "role-distributor",
+   "name": "Distributor",
+   "definition": "Makes an AI system available on the market without being provider or importer.",
+   "source_ids": [
+    "src-reg-2024-1689"
+   ]
+  },
+  {
+   "id": "role-authrep",
+   "name": "Authorised representative",
+   "definition": "EU-established entity mandated by a non-EU provider to carry out its obligations.",
+   "source_ids": [
+    "src-reg-2024-1689"
+   ]
+  }
+ ]
+}
