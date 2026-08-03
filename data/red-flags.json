@@ -1,0 +1,108 @@
+{
+ "audit_red_flags": [
+  {
+   "id": "rf-retroactive-documentation",
+   "statement": "Documentation created after the fact rather than contemporaneously with the decision — national competent authorities apply the contemporaneous standard.",
+   "related_obligation_ids": [
+    "obl-art11-technical-documentation",
+    "obl-art15-declare-accuracy-metrics",
+    "obl-art15-robustness",
+    "obl-art15-cybersecurity"
+   ],
+   "related_evidence_ids": [
+    "ev-technical-file-annexiv"
+   ],
+   "severity": "high"
+  },
+  {
+   "id": "rf-unversioned-docs",
+   "statement": "No clear version control / traceability between document versions and system versions.",
+   "related_obligation_ids": [
+    "obl-art11-technical-documentation",
+    "obl-art15-robustness"
+   ],
+   "related_evidence_ids": [
+    "ev-technical-file-annexiv"
+   ],
+   "severity": "medium"
+  },
+  {
+   "id": "rf-no-requirement-to-evidence-map",
+   "statement": "No compliance matrix mapping each requirement to the specific evidence that satisfies it.",
+   "related_obligation_ids": [
+    "obl-art11-technical-documentation"
+   ],
+   "related_evidence_ids": [
+    "ev-compliance-matrix"
+   ],
+   "severity": "medium"
+  },
+  {
+   "id": "rf-no-accuracy-metric-declared",
+   "statement": "Accuracy levels/metrics not declared in the instructions for use.",
+   "related_obligation_ids": [
+    "obl-art15-declare-accuracy-metrics"
+   ],
+   "related_evidence_ids": [
+    "ev-instructions-for-use"
+   ],
+   "severity": "high"
+  },
+  {
+   "id": "rf-unjustified-6-3-exception",
+   "statement": "Relying on the Article 6(3) 'not significant risk' exception without a documented justification.",
+   "related_obligation_ids": [
+    "obl-art6-classify-high-risk"
+   ],
+   "related_evidence_ids": [
+    "ev-classification-decision-record"
+   ],
+   "severity": "high"
+  },
+  {
+   "id": "rf-no-log-retention",
+   "statement": "Deployer does not retain the automatically-generated logs of the high-risk system within its control.",
+   "related_obligation_ids": [
+    "obl-art26-deployer-human-oversight"
+   ],
+   "related_evidence_ids": [
+    "ev-system-logs"
+   ],
+   "severity": "medium"
+  }
+ ],
+ "common_mistakes": [
+  {
+   "id": "mis-single-accuracy-number",
+   "mistake": "Declaring one headline accuracy number with no metric definition, test conditions or threshold rationale.",
+   "correction": "Declare the specific metric(s), the conditions/test set, and why the level is appropriate for the intended purpose.",
+   "related_obligation_ids": [
+    "obl-art15-declare-accuracy-metrics"
+   ]
+  },
+  {
+   "id": "mis-docs-after-the-fact",
+   "mistake": "Assembling the technical file just before assessment.",
+   "correction": "Maintain it as a living document from development onward; contemporaneous records are the standard.",
+   "related_obligation_ids": [
+    "obl-art11-technical-documentation"
+   ]
+  },
+  {
+   "id": "mis-domain-equals-highrisk",
+   "mistake": "Assuming that landing in an Annex III domain automatically makes the system high-risk.",
+   "correction": "The system must also perform one of the specific functions listed for that domain; otherwise it is not high-risk via 6(2).",
+   "related_obligation_ids": [
+    "obl-art6-classify-high-risk"
+   ]
+  },
+  {
+   "id": "mis-transparency-only-high-risk",
+   "mistake": "Believing Article 50 transparency duties apply only to high-risk systems.",
+   "correction": "Article 50 applies to any system in its four situations regardless of high-risk status.",
+   "related_obligation_ids": [
+    "obl-art50-ai-interaction-disclosure"
+   ]
+  }
+ ]
+}
