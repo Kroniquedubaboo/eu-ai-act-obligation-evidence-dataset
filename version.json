@@ -1,0 +1,33 @@
+{
+  "name": "eu-ai-act-obligation-evidence-dataset",
+  "title": "EU AI Act \u2014 Obligation-to-Evidence Dataset",
+  "dataset_version": "1.0.0",
+  "released": "2026-07-31",
+  "license": "CC-BY-4.0",
+  "attribution": "EU AI Regulation Decoded",
+  "canonical_url": "https://euaird.vercel.app/data.html",
+  "repository": "https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset",
+  "not_legal_advice": true,
+  "counts": {
+    "obligations": 14,
+    "evidence_artifacts": 17,
+    "articles": 11,
+    "annexes": 2,
+    "deadlines": 5,
+    "roles": 6,
+    "obligations_needs_review": 7,
+    "sources": 18,
+    "audit_red_flags": 6,
+    "common_mistakes": 4,
+    "risk_categories": 7
+  },
+  "files": {
+    "graph": "data/graph.json",
+    "obligations": "data/obligations.json",
+    "obligations_evidence_csv": "data/obligations-evidence.csv",
+    "schema": "data/SCHEMA.md",
+    "sources": "data/sources.json",
+    "red_flags": "data/red-flags.json",
+    "risk_categories": "data/risk-categories.json"
+  }
+}
