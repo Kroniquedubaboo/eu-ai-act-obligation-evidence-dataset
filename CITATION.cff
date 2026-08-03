@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "EU AI Act — Obligation-to-Evidence Dataset"
+abstract: >-
+  An open, machine-readable dataset mapping EU AI Act obligations to the specific
+  evidence an auditor expects, together with applicable roles, risk tiers,
+  deadlines, and common audit red flags. A practitioner reference; not legal advice.
+type: dataset
+version: "1.0.0"
+date-released: "2026-07-31"
+license: CC-BY-4.0
+url: "https://euaird.vercel.app/data.html"
+repository-code: "https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset"
+keywords:
+  - EU AI Act
+  - AI governance
+  - AI compliance
+  - regtech
+  - audit evidence
+  - open data
+authors:
+  - name: "EU AI Regulation Decoded"
+    website: "https://euaird.vercel.app"
