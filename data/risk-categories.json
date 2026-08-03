@@ -1,0 +1,61 @@
+{
+ "risk_categories": [
+  {
+   "id": "risk-prohibited",
+   "name": "Prohibited practice",
+   "definition": "AI practices banned under Article 5 (e.g. social scoring, certain biometric categorisation, manipulative techniques).",
+   "source_ids": [
+    "src-art5"
+   ]
+  },
+  {
+   "id": "risk-high-annex3",
+   "name": "High-risk (Annex III use case)",
+   "definition": "Stand-alone AI whose use case matches one of the eight Annex III domains AND performs a listed function (Article 6(2)). Full high-risk obligation set.",
+   "source_ids": [
+    "src-art6",
+    "src-annex3"
+   ]
+  },
+  {
+   "id": "risk-high-annex1",
+   "name": "High-risk (Annex I regulated product)",
+   "definition": "AI that is a safety component of, or is, a product covered by EU harmonisation legislation in Annex I (Article 6(1)).",
+   "source_ids": [
+    "src-art6"
+   ]
+  },
+  {
+   "id": "risk-gpai",
+   "name": "GPAI model",
+   "definition": "General-purpose AI model. Provider transparency + documentation + copyright duties.",
+   "source_ids": [
+    "src-art53"
+   ]
+  },
+  {
+   "id": "risk-gpai-systemic",
+   "name": "GPAI model with systemic risk",
+   "definition": "GPAI model meeting systemic-risk thresholds; additional evaluation, risk-mitigation, incident-reporting and cybersecurity duties.",
+   "source_ids": [
+    "src-art53"
+   ]
+  },
+  {
+   "id": "risk-transparency",
+   "name": "Limited-risk / transparency",
+   "definition": "Systems triggering Article 50 transparency duties regardless of high-risk status (chatbots, synthetic content, deepfakes, emotion recognition).",
+   "source_ids": [
+    "src-art50"
+   ]
+  },
+  {
+   "id": "risk-minimal",
+   "name": "Minimal risk",
+   "definition": "Everything else; no mandatory obligations under the Act (voluntary codes only).",
+   "source_ids": [
+    "src-reg-2024-1689"
+   ]
+  }
+ ]
+}
