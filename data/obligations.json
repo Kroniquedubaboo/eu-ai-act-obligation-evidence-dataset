@@ -1,0 +1,489 @@
+[
+ {
+  "id": "obl-art15-declare-accuracy-metrics",
+  "short_title": "Declare accuracy metrics in instructions for use",
+  "statement": "Choose appropriate accuracy metrics for the high-risk system and declare the levels and the metrics in the accompanying instructions for use; substantiate them in the technical documentation.",
+  "derived_from_ids": [
+   "art-15",
+   "art-11"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-accuracy-declaration-record",
+   "ev-instructions-for-use",
+   "ev-technical-file-annexiv"
+  ],
+  "red_flag_ids": [
+   "rf-no-accuracy-metric-declared",
+   "rf-retroactive-documentation"
+  ],
+  "mistake_ids": [
+   "mis-single-accuracy-number"
+  ],
+  "issue_ids": [
+   "iss-7"
+  ],
+  "source_ids": [
+   "src-art15"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": false,
+  "confidence": "high"
+ },
+ {
+  "id": "obl-art15-robustness",
+  "short_title": "Evidence robustness / resilience",
+  "statement": "Design the system to be as resilient as possible to errors, faults and inconsistencies, and to attempts at manipulation (adversarial examples, data/model poisoning); maintain a defensible robustness test plan and results.",
+  "derived_from_ids": [
+   "art-15"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-robustness-test-plan",
+   "ev-technical-file-annexiv"
+  ],
+  "red_flag_ids": [
+   "rf-retroactive-documentation",
+   "rf-unversioned-docs"
+  ],
+  "mistake_ids": [],
+  "issue_ids": [
+   "iss-7"
+  ],
+  "source_ids": [
+   "src-art15"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": false,
+  "confidence": "high"
+ },
+ {
+  "id": "obl-art15-cybersecurity",
+  "short_title": "Evidence AI-specific cybersecurity",
+  "statement": "Protect the system against AI-specific attacks (data poisoning, model poisoning, adversarial examples, confidentiality attacks) throughout its lifecycle; produce dated cybersecurity evidence including an AI threat model.",
+  "derived_from_ids": [
+   "art-15"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-cybersecurity-threat-model",
+   "ev-technical-file-annexiv"
+  ],
+  "red_flag_ids": [
+   "rf-retroactive-documentation"
+  ],
+  "mistake_ids": [],
+  "issue_ids": [
+   "iss-7"
+  ],
+  "source_ids": [
+   "src-art15"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": false,
+  "confidence": "high"
+ },
+ {
+  "id": "obl-art9-risk-management",
+  "short_title": "Run a lifecycle risk-management system",
+  "statement": "Establish, implement, document and maintain a continuous risk-management system: identify and evaluate known and reasonably foreseeable risks, adopt targeted mitigation, and test throughout the lifecycle.",
+  "derived_from_ids": [
+   "art-9"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-risk-management-file",
+   "ev-technical-file-annexiv"
+  ],
+  "red_flag_ids": [
+   "rf-retroactive-documentation",
+   "rf-unversioned-docs"
+  ],
+  "mistake_ids": [],
+  "issue_ids": [],
+  "source_ids": [
+   "src-art9"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": true,
+  "confidence": "medium"
+ },
+ {
+  "id": "obl-art10-data-governance",
+  "short_title": "Govern training, validation and test data",
+  "statement": "Ensure training/validation/testing datasets meet quality criteria (relevance, representativeness, appropriate statistical properties for the intended purpose) and are examined for possible biases; document data provenance and processing.",
+  "derived_from_ids": [
+   "art-10"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-data-governance-records",
+   "ev-technical-file-annexiv"
+  ],
+  "red_flag_ids": [
+   "rf-retroactive-documentation"
+  ],
+  "mistake_ids": [],
+  "issue_ids": [],
+  "source_ids": [
+   "src-art10"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": true,
+  "confidence": "medium"
+ },
+ {
+  "id": "obl-art26-deployer-human-oversight",
+  "short_title": "Assign human oversight and use per instructions (deployer)",
+  "statement": "As a deployer of a high-risk system: use it in accordance with the instructions for use, assign human oversight to competent, trained and resourced natural persons, ensure input data is relevant and sufficiently representative, monitor operation, and keep the automatically-generated logs.",
+  "derived_from_ids": [
+   "art-26"
+  ],
+  "applies_to_role_ids": [
+   "role-deployer"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-deployer-oversight-record",
+   "ev-system-logs"
+  ],
+  "red_flag_ids": [
+   "rf-no-log-retention"
+  ],
+  "mistake_ids": [],
+  "issue_ids": [],
+  "source_ids": [
+   "src-art26"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": true,
+  "confidence": "medium"
+ },
+ {
+  "id": "obl-art11-technical-documentation",
+  "short_title": "Draw up & maintain the Annex IV technical file",
+  "statement": "Draw up the Annex IV technical documentation before market placement and keep it up to date as a living document; it is the primary evidence package assessed at conformity assessment.",
+  "derived_from_ids": [
+   "art-11",
+   "anx-4"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-technical-file-annexiv",
+   "ev-compliance-matrix"
+  ],
+  "red_flag_ids": [
+   "rf-retroactive-documentation",
+   "rf-unversioned-docs",
+   "rf-no-requirement-to-evidence-map"
+  ],
+  "mistake_ids": [
+   "mis-docs-after-the-fact"
+  ],
+  "issue_ids": [
+   "iss-5"
+  ],
+  "source_ids": [
+   "src-art11",
+   "src-annex4"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": false,
+  "confidence": "high"
+ },
+ {
+  "id": "obl-art6-classify-high-risk",
+  "short_title": "Classify the system against Article 6 / Annex III",
+  "statement": "Determine whether the system is high-risk: does it fall in an Annex III domain AND perform a listed function (6(2)), or is it an Annex I product/safety-component (6(1))? Apply the 6(3) not-significant-risk exception only with a documented justification.",
+  "derived_from_ids": [
+   "art-6",
+   "anx-3"
+  ],
+  "applies_to_role_ids": [
+   "role-provider",
+   "role-deployer"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-classification-decision-record"
+  ],
+  "red_flag_ids": [
+   "rf-unjustified-6-3-exception"
+  ],
+  "mistake_ids": [
+   "mis-domain-equals-highrisk"
+  ],
+  "issue_ids": [
+   "iss-6",
+   "post-annex3"
+  ],
+  "source_ids": [
+   "src-art6",
+   "src-annex3",
+   "src-guidance-hrai-2026-05"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": true,
+  "confidence": "medium"
+ },
+ {
+  "id": "obl-art49-database-registration",
+  "short_title": "Register in the EU database",
+  "statement": "Register the high-risk system (and required provider/system information) in the EU database before placing it on the market or putting it into service.",
+  "derived_from_ids": [
+   "art-49"
+  ],
+  "applies_to_role_ids": [
+   "role-provider",
+   "role-deployer"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-eu-db-registration"
+  ],
+  "red_flag_ids": [],
+  "mistake_ids": [],
+  "issue_ids": [
+   "iss-3"
+  ],
+  "source_ids": [
+   "src-art49"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": true,
+  "confidence": "medium"
+ },
+ {
+  "id": "obl-art43-conformity-assessment",
+  "short_title": "Complete conformity assessment before market",
+  "statement": "Pass the applicable conformity-assessment procedure (internal control or notified body) demonstrating the requirements are met, before placing the high-risk system on the market.",
+  "derived_from_ids": [
+   "art-43"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-high-annex3",
+   "risk-high-annex1"
+  ],
+  "deadline_id": "dl-2027-12-02-highrisk-annex3",
+  "evidence_ids": [
+   "ev-doc-conformity",
+   "ev-technical-file-annexiv"
+  ],
+  "red_flag_ids": [],
+  "mistake_ids": [],
+  "issue_ids": [
+   "iss-5"
+  ],
+  "source_ids": [
+   "src-art43"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": true,
+  "confidence": "medium"
+ },
+ {
+  "id": "obl-art50-ai-interaction-disclosure",
+  "short_title": "Disclose AI interaction to users",
+  "statement": "Design AI systems intended to interact directly with people so those people are informed they are interacting with an AI, unless obvious to a reasonably well-informed person.",
+  "derived_from_ids": [
+   "art-50"
+  ],
+  "applies_to_role_ids": [
+   "role-provider"
+  ],
+  "risk_category_ids": [
+   "risk-transparency"
+  ],
+  "deadline_id": "dl-2026-08-02-transparency",
+  "evidence_ids": [
+   "ev-transparency-notice"
+  ],
+  "red_flag_ids": [],
+  "mistake_ids": [
+   "mis-transparency-only-high-risk"
+  ],
+  "issue_ids": [
+   "iss-4"
+  ],
+  "source_ids": [
+   "src-art50"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": false,
+  "confidence": "high"
+ },
+ {
+  "id": "obl-art50-synthetic-content-marking",
+  "short_title": "Mark AI-generated content machine-readably",
+  "statement": "Providers generating synthetic audio/image/video/text must mark outputs in a machine-readable format detectable as artificially generated or manipulated (with limited exceptions).",
+  "derived_from_ids": [
+   "art-50"
+  ],
+  "applies_to_role_ids": [
+   "role-provider",
+   "role-gpai-provider"
+  ],
+  "risk_category_ids": [
+   "risk-transparency"
+  ],
+  "deadline_id": "dl-2026-08-02-transparency",
+  "evidence_ids": [
+   "ev-content-provenance-marking"
+  ],
+  "red_flag_ids": [],
+  "mistake_ids": [],
+  "issue_ids": [
+   "iss-4"
+  ],
+  "source_ids": [
+   "src-art50"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": false,
+  "confidence": "high"
+ },
+ {
+  "id": "obl-art50-deepfake-disclosure",
+  "short_title": "Disclose deepfakes",
+  "statement": "Deployers generating or manipulating deepfake image/audio/video must disclose that the content is artificially generated or manipulated.",
+  "derived_from_ids": [
+   "art-50"
+  ],
+  "applies_to_role_ids": [
+   "role-deployer"
+  ],
+  "risk_category_ids": [
+   "risk-transparency"
+  ],
+  "deadline_id": "dl-2026-08-02-transparency",
+  "evidence_ids": [
+   "ev-transparency-notice"
+  ],
+  "red_flag_ids": [],
+  "mistake_ids": [],
+  "issue_ids": [
+   "iss-4"
+  ],
+  "source_ids": [
+   "src-art50"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": false,
+  "confidence": "high"
+ },
+ {
+  "id": "obl-art53-gpai-documentation",
+  "short_title": "GPAI provider documentation & copyright",
+  "statement": "Providers of GPAI models must maintain up-to-date technical documentation, provide information to downstream providers, put a copyright-compliance policy in place, and publish a sufficiently detailed summary of training content.",
+  "derived_from_ids": [
+   "art-53"
+  ],
+  "applies_to_role_ids": [
+   "role-gpai-provider"
+  ],
+  "risk_category_ids": [
+   "risk-gpai",
+   "risk-gpai-systemic"
+  ],
+  "deadline_id": "dl-2025-08-02-gpai",
+  "evidence_ids": [
+   "ev-gpai-model-documentation",
+   "ev-training-content-summary"
+  ],
+  "red_flag_ids": [],
+  "mistake_ids": [],
+  "issue_ids": [
+   "iss-1"
+  ],
+  "source_ids": [
+   "src-art53",
+   "src-gpai-cop-2025-07"
+  ],
+  "version": 1,
+  "last_reviewed": "2026-07-30",
+  "status": "active",
+  "needs_review": true,
+  "confidence": "medium"
+ }
+]
