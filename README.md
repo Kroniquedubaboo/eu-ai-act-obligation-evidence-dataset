@@ -1,4 +1,4 @@
-   # EU AI Act — Obligation-to-Evidence Dataset
+# EU AI Act — Obligation-to-Evidence Dataset
 
 A free, open, machine-readable dataset that maps **EU AI Act obligations** to the **specific evidence an auditor expects**, together with the applicable roles, risk tiers, deadlines, and common audit red flags.
 
@@ -38,7 +38,7 @@ As of this release the dataset covers:
 |---|---:|---|
 | Obligations | 14 | Atomic duties under the EU AI Act (Regulation (EU) 2024/1689) |
 | Evidence artifacts | 17 | The document/record an auditor expects for an obligation |
-| Articles | 11 | AI Act articles referengwed (e.g. 5, 6, 9, 10, 11, 15, 26, 43, 49, 50, 53) |
+| Articles | 11 | AI Act articles referenced (e.g. 5, 6, 9, 10, 11, 15, 26, 43, 49, 50, 53) |
 | Annexes | 2 | Annex III (high-risk use cases) and Annex IV (technical documentation) |
 | Deadlines | 5 | Applicability dates, with change history where a date moved |
 | Roles | 6 | Provider, deployer, GPAI provider, importer, distributor, authorised representative |
