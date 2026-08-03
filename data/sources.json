@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {"id": "src-reg-2024-1689", "type": "regulation", "title": "Regulation (EU) 2024/1689 (EU AI Act)", "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj", "cite": "Regulation (EU) 2024/1689", "needs_review": false},
+    {"id": "src-art5", "type": "article", "title": "Article 5 — Prohibited AI practices", "url": "https://artificialintelligenceact.eu/article/5/", "cite": "Art. 5 AIA", "needs_review": false},
+    {"id": "src-art6", "type": "article", "title": "Article 6 — Classification rules for high-risk AI systems", "url": "https://artificialintelligenceact.eu/article/6/", "cite": "Art. 6 AIA", "needs_review": false},
+    {"id": "src-art9", "type": "article", "title": "Article 9 — Risk management system", "url": "https://artificialintelligenceact.eu/article/9/", "cite": "Art. 9 AIA", "needs_review": false},
+    {"id": "src-art10", "type": "article", "title": "Article 10 — Data and data governance", "url": "https://artificialintelligenceact.eu/article/10/", "cite": "Art. 10 AIA", "needs_review": false},
+    {"id": "src-art26", "type": "article", "title": "Article 26 — Obligations of deployers of high-risk AI systems", "url": "https://artificialintelligenceact.eu/article/26/", "cite": "Art. 26 AIA", "needs_review": false},
+    {"id": "src-art11", "type": "article", "title": "Article 11 — Technical documentation", "url": "https://artificialintelligenceact.eu/article/11/", "cite": "Art. 11 AIA", "needs_review": false},
+    {"id": "src-art15", "type": "article", "title": "Article 15 — Accuracy, robustness and cybersecurity", "url": "https://artificialintelligenceact.eu/article/15/", "cite": "Art. 15 AIA", "needs_review": false},
+    {"id": "src-art43", "type": "article", "title": "Article 43 — Conformity assessment", "url": "https://artificialintelligenceact.eu/article/43/", "cite": "Art. 43 AIA", "needs_review": false},
+    {"id": "src-art49", "type": "article", "title": "Article 49 — Registration (EU database)", "url": "https://artificialintelligenceact.eu/article/49/", "cite": "Art. 49 AIA", "needs_review": false},
+    {"id": "src-art50", "type": "article", "title": "Article 50 — Transparency obligations for certain AI systems", "url": "https://artificialintelligenceact.eu/article/50/", "cite": "Art. 50 AIA", "needs_review": false},
+    {"id": "src-art53", "type": "article", "title": "Article 53 — Obligations for providers of GPAI models", "url": "https://artificialintelligenceact.eu/article/53/", "cite": "Art. 53 AIA", "needs_review": false},
+    {"id": "src-annex3", "type": "annex", "title": "Annex III — High-risk AI systems referred to in Article 6(2)", "url": "https://artificialintelligenceact.eu/annex/3/", "cite": "Annex III AIA", "needs_review": false},
+    {"id": "src-annex4", "type": "annex", "title": "Annex IV — Technical documentation", "url": "https://artificialintelligenceact.eu/annex/4/", "cite": "Annex IV AIA", "needs_review": false},
+    {"id": "src-guidance-hrai-2026-05", "type": "guidance", "title": "Commission draft guidelines on classification of high-risk AI systems (19 May 2026)", "url": "https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems", "cite": "Commission draft HRAI guidelines, 19 May 2026", "needs_review": true},
+    {"id": "src-gpai-cop-2025-07", "type": "guidance", "title": "General-Purpose AI Code of Practice (10 July 2025)", "url": "https://en.wikipedia.org/wiki/General-Purpose_AI_Code_of_Practice", "cite": "GPAI Code of Practice, 10 Jul 2025", "needs_review": true},
+    {"id": "src-omnibus-2026-05-07", "type": "guidance", "title": "Political agreement revising AI Act timelines (Digital Omnibus, 7 May 2026)", "url": "https://www.insideprivacy.com/artificial-intelligence/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/", "cite": "AI Act timeline revision political agreement, 7 May 2026", "needs_review": true},
+    {"id": "src-ec-timeline", "type": "official", "title": "AI Act — Regulatory framework (European Commission)", "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", "cite": "European Commission — Regulatory framework for AI", "needs_review": false}
+  ]
+}
