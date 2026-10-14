@@ -253,7 +253,7 @@
  {
   "id": "obl-art6-classify-high-risk",
   "short_title": "Classify the system against Article 6 / Annex III",
-  "statement": "Determine whether the system is high-risk: does it fall in an Annex III domain AND perform a listed function (6(2)), or is it an Annex I product/safety-component (6(1))? Apply the 6(3) not-significant-risk exception only with a documented justification.",
+  "statement": "Determine whether the system is high-risk: does it fall in an Annex III domain AND perform a listed function (6(2)), or is it an Annex I product/safety-component (6(1))? Apply the 6(3) not-significant-risk exception only with a documented justification. For the 6(1) route, apply the Art. 6(1a)\u2013(1c) carve-outs first: AI used solely for non-safety assistance, optimisation, convenience or quality control is not a safety component unless its failure would endanger health and safety, and third-party assessment required only for non-safety risks does not count.",
   "derived_from_ids": [
    "art-6",
    "anx-3"
@@ -283,10 +283,11 @@
   "source_ids": [
    "src-art6",
    "src-annex3",
-   "src-guidance-hrai-2026-05"
+   "src-guidance-hrai-2026-05",
+   "src-omnibus-2026-05-07"
   ],
   "version": 1,
-  "last_reviewed": "2026-07-30",
+  "last_reviewed": "2026-09-23",
   "status": "active",
   "needs_review": true,
   "confidence": "medium"
@@ -392,13 +393,12 @@
  {
   "id": "obl-art50-synthetic-content-marking",
   "short_title": "Mark AI-generated content machine-readably",
-  "statement": "Providers generating synthetic audio/image/video/text must mark outputs in a machine-readable format detectable as artificially generated or manipulated (with limited exceptions).",
+  "statement": "Providers of AI systems (incl. general-purpose AI systems) generating synthetic audio/image/video/text must mark outputs machine-readably as AI-generated (limited exceptions). Article 50 does not apply to GPAI models as such: a provider building on a third-party model may rely on that model's marking, but remains responsible for demonstrating compliance (Commission Art. 50 Guidelines, paras 27 and 74).",
   "derived_from_ids": [
    "art-50"
   ],
   "applies_to_role_ids": [
-   "role-provider",
-   "role-gpai-provider"
+   "role-provider"
   ],
   "risk_category_ids": [
    "risk-transparency"
@@ -413,10 +413,11 @@
    "iss-4"
   ],
   "source_ids": [
-   "src-art50"
+   "src-art50",
+   "src-ec-art50-guidelines-2026-07"
   ],
-  "version": 1,
-  "last_reviewed": "2026-07-30",
+  "version": 2,
+  "last_reviewed": "2026-10-08",
   "status": "active",
   "needs_review": false,
   "confidence": "high"

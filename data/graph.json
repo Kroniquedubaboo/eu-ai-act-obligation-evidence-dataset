@@ -258,7 +258,7 @@
   {
    "id": "obl-art6-classify-high-risk",
    "short_title": "Classify the system against Article 6 / Annex III",
-   "statement": "Determine whether the system is high-risk: does it fall in an Annex III domain AND perform a listed function (6(2)), or is it an Annex I product/safety-component (6(1))? Apply the 6(3) not-significant-risk exception only with a documented justification.",
+   "statement": "Determine whether the system is high-risk: does it fall in an Annex III domain AND perform a listed function (6(2)), or is it an Annex I product/safety-component (6(1))? Apply the 6(3) not-significant-risk exception only with a documented justification. For the 6(1) route, apply the Art. 6(1a)\u2013(1c) carve-outs first: AI used solely for non-safety assistance, optimisation, convenience or quality control is not a safety component unless its failure would endanger health and safety, and third-party assessment required only for non-safety risks does not count.",
    "derived_from_ids": [
     "art-6",
     "anx-3"
@@ -288,10 +288,11 @@
    "source_ids": [
     "src-art6",
     "src-annex3",
-    "src-guidance-hrai-2026-05"
+    "src-guidance-hrai-2026-05",
+    "src-omnibus-2026-05-07"
    ],
    "version": 1,
-   "last_reviewed": "2026-07-30",
+   "last_reviewed": "2026-09-23",
    "status": "active",
    "needs_review": true,
    "confidence": "medium"
@@ -397,13 +398,12 @@
   {
    "id": "obl-art50-synthetic-content-marking",
    "short_title": "Mark AI-generated content machine-readably",
-   "statement": "Providers generating synthetic audio/image/video/text must mark outputs in a machine-readable format detectable as artificially generated or manipulated (with limited exceptions).",
+   "statement": "Providers of AI systems (incl. general-purpose AI systems) generating synthetic audio/image/video/text must mark outputs machine-readably as AI-generated (limited exceptions). Article 50 does not apply to GPAI models as such: a provider building on a third-party model may rely on that model's marking, but remains responsible for demonstrating compliance (Commission Art. 50 Guidelines, paras 27 and 74).",
    "derived_from_ids": [
     "art-50"
    ],
    "applies_to_role_ids": [
-    "role-provider",
-    "role-gpai-provider"
+    "role-provider"
    ],
    "risk_category_ids": [
     "risk-transparency"
@@ -418,10 +418,11 @@
     "iss-4"
    ],
    "source_ids": [
-    "src-art50"
+    "src-art50",
+    "src-ec-art50-guidelines-2026-07"
    ],
-   "version": 1,
-   "last_reviewed": "2026-07-30",
+   "version": 2,
+   "last_reviewed": "2026-10-08",
    "status": "active",
    "needs_review": false,
    "confidence": "high"
@@ -744,10 +745,11 @@
    "number": 5,
    "legal_title": "Prohibited AI practices",
    "plain_title": "What AI you may not build or use at all",
-   "summary": "Bans a defined set of practices (e.g. harmful manipulation, social scoring, certain biometric categorisation and untargeted scraping).",
+   "summary": "Bans manipulation, social scoring, some biometric uses and scraping (since 2025); from 2 Dec 2026 also AI generating non-consensual intimate content.",
    "applies_from_deadline_id": "dl-2025-02-02-prohibited",
    "source_ids": [
-    "src-art5"
+    "src-art5",
+    "src-omnibus-2026-05-07"
    ]
   },
   {
@@ -848,7 +850,11 @@
    "summary": "Disclosure duties independent of high-risk status: inform users they interact with AI; mark AI-generated/manipulated content in machine-readable form; disclose deepfakes; notify subjects of emotion-recognition/biometric-categorisation.",
    "applies_from_deadline_id": "dl-2026-08-02-transparency",
    "source_ids": [
-    "src-art50"
+    "src-art50",
+    "src-ec-art50-faq",
+    "src-ec-art50-guidelines-2026-07",
+    "src-ec-transparency-cop-2026-06",
+    "src-ec-cop-adequacy-opinion-2026-07"
    ]
   },
   {
@@ -969,6 +975,38 @@
    "confidence": "high"
   },
   {
+   "id": "dl-2026-12-02-art50-2-grace",
+   "date": "2026-12-02",
+   "label": "Art. 50(2) marking grace period ends \u2014 generative AI systems already on the market before 2 August 2026 must mark synthetic output as machine-readable (Art. 111(4), inserted by Regulation (EU) 2026/1744)",
+   "applies_to": [
+    "risk-transparency"
+   ],
+   "status": "upcoming",
+   "history": [],
+   "source_ids": [
+    "src-ec-art50-faq",
+    "src-omnibus-2026-05-07"
+   ],
+   "confidence": "high",
+   "needs_review": false
+  },
+  {
+   "id": "dl-2026-12-02-art5-new-prohibitions",
+   "date": "2026-12-02",
+   "label": "New Article 5 prohibitions apply \u2014 AI systems that generate or manipulate non-consensual intimate material (Art. 5(1)(ba)) or child sexual abuse material (Art. 5(1)(bb)), with the scope rules in Art. 5(1a)\u2013(1b) (inserted by Regulation (EU) 2026/1744; date set by amended Art. 113(3)(a))",
+   "applies_to": [
+    "risk-prohibited"
+   ],
+   "status": "upcoming",
+   "history": [],
+   "source_ids": [
+    "src-omnibus-2026-05-07",
+    "src-art5"
+   ],
+   "confidence": "high",
+   "needs_review": false
+  },
+  {
    "id": "dl-2027-12-02-highrisk-annex3",
    "date": "2027-12-02",
    "label": "Stand-alone high-risk (Annex III) obligations apply",
@@ -980,7 +1018,7 @@
     {
      "date": "2026-08-02",
      "changed_on": "2026-05-07",
-     "reason": "Deferred ~16 months by the 7 May 2026 political agreement (Digital Omnibus timeline relief).",
+     "reason": "Deferred ~16 months by Regulation (EU) 2026/1744 (Digital Omnibus on AI), adopted 8 July 2026, in force 27 July 2026.",
      "source_ids": [
       "src-omnibus-2026-05-07"
      ]
@@ -989,8 +1027,8 @@
    "source_ids": [
     "src-omnibus-2026-05-07"
    ],
-   "confidence": "medium",
-   "needs_review": true
+   "confidence": "high",
+   "needs_review": false
   },
   {
    "id": "dl-2028-08-02-highrisk-annex1",
@@ -1004,7 +1042,7 @@
     {
      "date": "2027-08-02",
      "changed_on": "2026-05-07",
-     "reason": "Deferred ~12 months by the 7 May 2026 political agreement.",
+     "reason": "Deferred ~12 months by Regulation (EU) 2026/1744 (Digital Omnibus on AI), adopted 8 July 2026, in force 27 July 2026.",
      "source_ids": [
       "src-omnibus-2026-05-07"
      ]
@@ -1013,8 +1051,8 @@
    "source_ids": [
     "src-omnibus-2026-05-07"
    ],
-   "confidence": "medium",
-   "needs_review": true
+   "confidence": "high",
+   "needs_review": false
   }
  ],
  "roles": [
