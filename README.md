@@ -40,7 +40,7 @@ As of this release the dataset covers:
 | Evidence artifacts | 17 | The document/record an auditor expects for an obligation |
 | Articles | 11 | AI Act articles referenced (e.g. 5, 6, 9, 10, 11, 15, 26, 43, 49, 50, 53) |
 | Annexes | 2 | Annex III (high-risk use cases) and Annex IV (technical documentation) |
-| Deadlines | 5 | Applicability dates, with change history where a date moved |
+| Deadlines | 7 | Applicability dates, with change history where a date moved |
 | Roles | 6 | Provider, deployer, GPAI provider, importer, distributor, authorised representative |
 
 It is **not** a complete encoding of the entire Regulation. It is a growing, cited subset focused on the obligation → evidence mapping. See [Known limitations](#10-known-limitations--review-status).
@@ -117,7 +117,7 @@ obl-art15-declare-accuracy-metrics,Declare accuracy metrics in instructions for 
 
 See [`CITATION.cff`](CITATION.cff). Suggested citation:
 
-> EU AI Regulation Decoded (2026). *EU AI Act — Obligation-to-Evidence Dataset* (v1.0.0). CC BY 4.0. https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset
+> EU AI Regulation Decoded (2026). *EU AI Act — Obligation-to-Evidence Dataset* (v1.1.0). CC BY 4.0. https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset
 
 ## 7. How to reuse it
 
@@ -141,7 +141,7 @@ python3 validate.py
 
 ## 8. Update methodology
 
-The dataset is maintained alongside the [EU AI Regulation Decoded](https://euaird.vercel.app) newsletter, which acts as the update engine: when Commission guidance, a delegated act, a standard, or an enforcement action changes a fact, the affected record is updated — its `version` is bumped, `last_reviewed` is set, and the change is recorded in [`CHANGELOG.md`](CHANGELOG.md), citing the source. Deadlines keep their full change history inside the data (for example, the stand-alone high-risk obligations deferred by the 7 May 2026 political agreement). Corrections and additions are welcome via [Issues](../../issues) and Pull Requests — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+The dataset is maintained alongside the [EU AI Regulation Decoded](https://euaird.vercel.app) platform, which uses the same data: when Commission guidance, a delegated act, a standard, or an enforcement action changes a fact, the affected record is updated — its `version` is bumped, `last_reviewed` is set, and the change is recorded in [`CHANGELOG.md`](CHANGELOG.md), citing the source. Deadlines keep their full change history inside the data (for example, the stand-alone high-risk obligations deferred by Regulation (EU) 2026/1744, the Digital Omnibus on AI). Corrections and additions are welcome via [Issues](../../issues) and Pull Requests — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## 9. Source & legal-accuracy methodology
 
@@ -150,7 +150,7 @@ Every factual record cites at least one **primary source** — the Regulation ar
 ## 10. Known limitations & review status
 
 - **Coverage is partial.** 14 obligations is a growing subset, not the full Regulation. Missing areas include, among others, parts of Articles 13/14/17/72 and the eight Annex III domains as individual records.
-- **Some facts need verification.** 7 of 14 obligations are flagged `needs_review` (chiefly items touching the post–7 May 2026 timeline changes and GPAI/registration scope). Treat flagged records as directional.
+- **Some facts need verification.** 7 of 14 obligations are flagged `needs_review` (chiefly items touching the Digital Omnibus (Regulation (EU) 2026/1744) timeline changes and GPAI/registration scope). Treat flagged records as directional.
 - **Not legal advice, not official.** This is an independent practitioner dataset. It is not produced or endorsed by the European Commission or any authority, and does not replace the primary legal text or qualified legal counsel.
 - **The law is moving.** Deadlines and obligations are subject to change; always check the cited primary sources for the current position.
 
