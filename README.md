@@ -4,9 +4,8 @@ A free, open, machine-readable dataset that maps **EU AI Act obligations** to th
 
 Most EU AI Act resources explain *what the law says*. This dataset encodes the harder, practitioner-facing question: **which document or record must exist, for which role, by when — and what fails an audit.**
 
-- **Live reference & interactive tool:** <https://euaird.vercel.app>
-- **Interactive Audit-Readiness Checklist:** <https://euaird.vercel.app/audit-readiness.html>
-- **Dataset landing page:** <https://euaird.vercel.app/data.html>
+- **Status:** archived on 27 October 2026 and no longer maintained. The companion website (euaird.vercel.app) has been retired. The data reflects the law as last reviewed and may be out of date; it is general information, not legal advice.
+- **Updates:** [EU AI Regulation Decoded on LinkedIn](https://www.linkedin.com/company/eu-ai-regulation-decoded/)
 - **Licence:** [CC BY 4.0](LICENSE) — free to use, share and adapt with attribution.
 - **Status:** early release. Some legal facts are flagged `needs_review` (see [Known limitations](#known-limitations--review-status)).
 
@@ -141,7 +140,7 @@ python3 validate.py
 
 ## 8. Update methodology
 
-The dataset is maintained alongside the [EU AI Regulation Decoded](https://euaird.vercel.app) platform, which uses the same data: when Commission guidance, a delegated act, a standard, or an enforcement action changes a fact, the affected record is updated — its `version` is bumped, `last_reviewed` is set, and the change is recorded in [`CHANGELOG.md`](CHANGELOG.md), citing the source. Deadlines keep their full change history inside the data (for example, the stand-alone high-risk obligations deferred by Regulation (EU) 2026/1744, the Digital Omnibus on AI). Corrections and additions are welcome via [Issues](../../issues) and Pull Requests — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Until 27 October 2026 the dataset was maintained alongside the EU AI Regulation Decoded website (now retired), which used the same data. The method was: when Commission guidance, a delegated act, a standard, or an enforcement action changes a fact, the affected record is updated — its `version` is bumped, `last_reviewed` is set, and the change is recorded in [`CHANGELOG.md`](CHANGELOG.md), citing the source. Deadlines keep their full change history inside the data (for example, the stand-alone high-risk obligations deferred by Regulation (EU) 2026/1744, the Digital Omnibus on AI). Corrections and additions are welcome via [Issues](../../issues) and Pull Requests — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## 9. Source & legal-accuracy methodology
 
@@ -156,8 +155,7 @@ Every factual record cites at least one **primary source** — the Regulation ar
 
 ## Links & disclaimer
 
-- **Live platform:** <https://euaird.vercel.app>
-- **Interactive Audit-Readiness Checklist:** <https://euaird.vercel.app/audit-readiness.html>
-- **Dataset landing page:** <https://euaird.vercel.app/data.html>
+- **Status:** archived, no longer maintained (companion website retired 27 October 2026).
+- **LinkedIn:** <https://www.linkedin.com/company/eu-ai-regulation-decoded/>
 
 **Disclaimer:** This dataset is a practitioner reference, **not legal advice**, and does not create a client relationship. Verify against the cited primary sources and take qualified legal advice before relying on it for any compliance decision.
